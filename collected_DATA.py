@@ -72,8 +72,6 @@ def plotLineGraphAll():
 #plotLineGraphAll()
 
 def plotLargestNeuronReponse():
-    """Plot the response of neuron 100 for all models' r over all time values.
-    If a model's response array has fewer than 101 neurons, use the last neuron available."""
     plt.figure(figsize=(10, 6))
     models = [(r1, 'Model 1'), (r2, 'Model 2'),(r3, 'Model 3'), (r4, 'Model 4 α′ = 5')]#(r1, 'Model 1'), (r2, 'Model 2'),(r3, 'Model 3')
     
@@ -171,7 +169,6 @@ def imagvsreal(w):
     #imagvsreal(modelFour.W)
 
 def multiEigPlots():
-    """Plot the real vs. imaginary parts of the eigenvalues for three weight matrices on the same plot."""
     # Calculate eigenvalues for each matrix
     #eigenvalues1, _ = np.linalg.eig(w1)
     eigenvalues2, _ = np.linalg.eig(w2)
